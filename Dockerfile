@@ -1,4 +1,4 @@
-# Use the image as a parent image.
+# Use  Matthewfeickert image as a parent image.
 FROM matthewfeickert/docker-python3-ubuntu
 
 #Install flask dependencies using pip
@@ -6,6 +6,7 @@ RUN pip install flask
 
 #Copy Sample python code  
 COPY sample1.py /home/app/logs_responses.py
+
 #Copy ErrorLog text file
 COPY ErrorLog.txt /home/app/error.log
 
