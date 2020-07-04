@@ -1,4 +1,4 @@
-# Use  Matthewfeickert image as a parent image.
+# Use Matthewfeickert image as a parent image.
 FROM matthewfeickert/docker-python3-ubuntu
 
 #Install flask dependencies using pip
