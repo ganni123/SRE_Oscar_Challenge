@@ -1,9 +1,20 @@
-# app.py
-from flask import Flask           # import flask
-app = Flask(__name__)             # create an app instance
+# import flask
+from flask import Flask
 
-@app.route("/")                   # at the end point /
-def hello():                      # call method hello
-    return "Hello World!"         # which returns "hello world"
-if __name__ == "__main__":        # on running python app.py
-    app.run()                     # run the flask app
+# create an app instance          
+app = Flask(__name__) 
+
+# at the end point /
+@app.route("/")
+
+# call method hello                  
+def hello():
+
+# which returns "hello world"                          
+    return "Hello World!"
+
+# on running python flask.py             
+if __name__ == "__main__":
+
+# run the flask app            
+    app.run()                     
